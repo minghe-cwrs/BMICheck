@@ -1,5 +1,7 @@
 while True:
+
         w = input("输入体重[千克/公斤]\n[local]~#")
+        print()
         h = input("输入身高[米]\n(带小数点)\n[local]~#：")
         w = float(w)
         h = float(h)
@@ -7,8 +9,9 @@ while True:
         ht = float(ht)
         bmi = w/ht
         bmi = str(bmi)
+        print()
         print("您的BMI为：" + bmi)
-
+        print()
         bmi = float(bmi)
 
         if bmi < 18.5:
@@ -29,5 +32,6 @@ while True:
         elif bmi >= 35:
                 print("您这...")
                 print("赶紧打电话咨询营养师吧！")
-
+        
+        print()
         input("程序到此结束，按任意键继续！\n(程序会不停循环 直到您关掉为止)")
